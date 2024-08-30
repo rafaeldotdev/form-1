@@ -1,10 +1,9 @@
 @import url(../styles/fields/index.css);
 
-form{
-  margin-top: 2.5rem;
-}
+
 
 fieldset{
+  margin-top: 2.5rem;
   border: none;
   display: grid;
   gap: 1.5rem;

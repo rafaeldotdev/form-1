@@ -71,3 +71,15 @@ img{
 ::-webkit-scrollbar-thumb {
   background-color: var(--stroke-default)
 }
+
+.flex{
+  display: flex;
+}
+
+.flex-1{
+  flex: 1;
+}
+
+.flex-2{
+  flex: 2;
+}
