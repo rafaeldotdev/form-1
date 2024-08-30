@@ -112,23 +112,45 @@
               <div class="flex">
                 <div class="input-wrapper flex-2">
                   <label for="street">Rua</label>
-                  <input type="text" name="street" id="street" value="Rua das Flores" disabled />
+                  <input
+                    type="text"
+                    name="street"
+                    id="street"
+                    value="Rua das Flores"
+                    disabled
+                  />
                 </div>
                 <div class="input-wrapper flex-1">
                   <label for="street-number">Número</label>
-                  <input type="number" name="street-number" id="street-number" />
+                  <input
+                    type="number"
+                    name="street-number"
+                    id="street-number"
+                  />
                 </div>
               </div>
 
               <div class="flex">
                 <div class="input-wrapper flex-2">
                   <label for="city">Cidade</label>
-                  <input type="text" name="city" id="city" value="São Paulo" disabled>
+                  <input
+                    type="text"
+                    name="city"
+                    id="city"
+                    value="São Paulo"
+                    disabled
+                  />
                 </div>
 
                 <div class="input-wrapper flex-1">
                   <label for="state">Estado</label>
-                  <input type="text" name="state" id="state" value="SP" disabled>
+                  <input
+                    type="text"
+                    name="state"
+                    id="state"
+                    value="SP"
+                    disabled
+                  />
                 </div>
               </div>
             </fieldset>
@@ -137,46 +159,118 @@
               <legend>Informações do responsável</legend>
               <div class="input-wrapper">
                 <label for="parent-name">Nome do responsável</label>
-                <input type="text" id="parent-name" name="parent-name">
-                <small>Principal responsável legal e contato de emergência</small>
+                <input type="text" id="parent-name" name="parent-name" />
+                <small
+                  >Principal responsável legal e contato de emergência</small
+                >
               </div>
 
               <div class="input-wrapper">
                 <label for="parent-tel">Telefone</label>
-                <input type="tel" id="parent-tel" name="parent-tel" placeholder="(10) 9 8765-4321">
+                <input
+                  type="tel"
+                  id="parent-tel"
+                  name="parent-tel"
+                  placeholder="(10) 9 8765-4321"
+                />
               </div>
 
-               <div class="input-wrapper">
+              <div class="input-wrapper">
                 <label for="parent-email">E-mail</label>
-                <input type="email" id="parent-email" name="parent-email" required>
+                <input
+                  type="email"
+                  id="parent-email"
+                  name="parent-email"
+                  required
+                />
                 <div class="error">
-                  <img src="./assets/icons/alert-circle.svg" alt="" srcset="">
+                  <img src="./assets/icons/alert-circle.svg" alt="" srcset="" />
                   <span>Insira um e-mail válido</span>
                 </div>
               </div>
             </fieldset>
 
-
             <fieldset class="registration">
               <legend>Opções de matrícula</legend>
               <div class="input-wrapper">
-                 <label>Selecione o turno de estudo</label>
-                 <div class="radio-wrapper">
+                <label>Selecione o turno de estudo</label>
+                <div class="radio-wrapper">
                   <div class="radio-inner">
                     <div class="radio-image"></div>
-                    <input type="radio" name="study-shift" value="morning" id="morning">
-                    <img src="./assets/icons/sun-cloud-02.svg" alt="">
+                    <input
+                      type="radio"
+                      name="study-shift"
+                      value="morning"
+                      id="morning"
+                    />
+                    <img src="./assets/icons/sun-cloud-02.svg" alt="" />
                     <label for="morning">Manhã</label>
                   </div>
 
                   <div class="radio-inner">
                     <div class="radio-image"></div>
-                    <input type="radio" name="study-shift" value="evening" id="evening">
-                    <img src="./assets/icons/sun-02.svg "alt="">
+                    <input
+                      type="radio"
+                      name="study-shift"
+                      value="evening"
+                      id="evening"
+                    />
+                    <img src="./assets/icons/sun-02.svg " alt="" />
                     <label for="evening">Tarde</label>
                   </div>
-                 </div>
+                </div>
+              </div>
+              <div class="input-wrapper">
+                <label
+                  >Em qual esporte você gostaria de inscrever seu filho?</label
+                >
+                <div class="radio-wrapper">
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sport" id="futebol" />
+                    <img src="./assets/icons/football.svg" alt="" srcset="" />
+                    <label for="futebol">Futebol</label>
+                  </div>
 
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sport" id="basketball" />
+                    <img
+                      src="./assets/icons/basketball-02.svg"
+                      alt=""
+                      srcset=""
+                    />
+                    <label for="basketball">Basquete</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sport" id="swimming" />
+                    <img src="./assets/icons/natação.svg" alt="" srcset="" />
+                    <label for="swimming">Natação</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sport" id="yoga" />
+                    <img src="./assets/icons/yoga.svg" alt="" srcset="" />
+                    <label for="yoga">Yoga</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sport" id="volley" />
+                    <img src="./assets/icons/volleyball.svg" alt="" srcset="" />
+                    <label for="volley">Volei</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sport" id="boxing" />
+                    <img src="./assets/icons/boxing-glove-01.svg" alt="" srcset="" />
+                    <label for="boxing">Boxing</label>
+                  </div>
+                </div>
               </div>
             </fieldset>
           </form>
