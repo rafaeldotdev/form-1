@@ -1,63 +1,65 @@
 *,
 *::after,
-*::before{
+*::before {
   box-sizing: border-box;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
 }
 
-:root{
+:root {
   /* COLORS */
 
-  --brand-light: #F67841;
-  --brand-mid: #F3541C;
-  --brand-dark: #E43A12;
+  --brand-light: #f67841;
+  --brand-mid: #f3541c;
+  --brand-dark: #e43a12;
 
   --text-primary: #292524;
-  --text-secondary: #57534E;
-  --text-tertiary: #8F8881;
+  --text-secondary: #57534e;
+  --text-tertiary: #8f8881;
 
-  --surface-primary: #FFFFFF;
-  --surface-secondary: #FEE7D6;
-  --surface-disabled: #E7E5E4;
+  --surface-primary: #ffffff;
+  --surface-secondary: #fee7d6;
+  --surface-disabled: #e7e5e4;
 
-  --stroke-default: #D6D3D1;
-  --stroke-highlight: #F3541C;
+  --stroke-default: #d6d3d1;
+  --stroke-highlight: #f3541c;
 
-  --semantic-error: #DC2626;
+  --semantic-error: #dc2626;
 
-  --orange: #F9A474;
-  --yellow: #FEDF6F;
-  --green: #C7D78D;
-  --blue: #B8CEDC;
-  --violet: #C3B2E7;
-  --pink: #F682A5;
+  --orange: #f9a474;
+  --yellow: #fedf6f;
+  --green: #c7d78d;
+  --blue: #b8cedc;
+  --violet: #c3b2e7;
+  --pink: #f682a5;
 
   /* FONTS */
-  --font-family: 'Poppins', sans-serif;
+  --font-family: "Poppins", sans-serif;
 
   --h1: 600 2.5rem/125% var(--font-family);
   --h2: 600 1.5rem/120% var(--font-family);
   --h3: 600 1.25rem/120% var(--font-family);
   --h4: 600 1rem/120% var(--font-family);
 
-  --text : 400 1rem/1.5 var(--font-family);
-  --text-sm: 400 .875rem/1.4 var(--font-family);
+  --text: 400 1rem/1.5 var(--font-family);
+  --text-sm: 400 0.875rem/1.4 var(--font-family);
+  --text-xsm: 400 0.75rem/1.4 var(--font-family);
 }
 
-body{
+body {
   color: var(--text-secondary);
   font: var(--text);
 }
 
-h1,h2{
+h1,
+h2 {
   color: var(--text-primary);
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
 }
@@ -65,21 +67,27 @@ img{
 ::-webkit-scrollbar {
   width: 3px;
   height: 0;
-  background-color: var(--surface-secondary)
+  background-color: var(--surface-secondary);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--stroke-default)
+  background-color: var(--stroke-default);
 }
 
-.flex{
+.flex {
   display: flex;
 }
 
-.flex-1{
+.flex-1 {
   flex: 1;
 }
 
-.flex-2{
+.flex-2 {
   flex: 2;
+}
+
+input + small {
+  color: #78716c;
+  font: var(--text-xsm);
+  margin-top: .25rem;
 }

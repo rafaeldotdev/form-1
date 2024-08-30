@@ -58,11 +58,27 @@ select {
   opacity: 0.5;
 }
 
-input{
-  &[disabled]{
+input {
+  &[disabled] {
     color: var(--text-primary);
     background-color: var(--surface-disabled);
     border: 1px solid var(--stroke-default);
+  }
 
+  &:invalid{
+    border: .125rem solid var(--semantic-error);
+  }
+
+  &:required + .error{
+    display: flex;
+    margin-top: .3rem;
+    align-items: center;
+    color: var(--semantic-error);
+    gap: .25rem;
+  }
+
+  &:not(focus):valid + .error{
+    display: none;
   }
 }
+
